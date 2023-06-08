@@ -19,7 +19,7 @@ ul {
 .wrapper {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 
 .container {
@@ -34,10 +34,11 @@ ul {
 .item {
   background-color: #f1f1f1;
   border: 1px solid #ccc;
-  margin-bottom: 5px;
-  padding: 5px;
-  margin: 5px 30px;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  margin: 0.5em 2em;
 }
+
 .message {
   text-align: center;
   font-size: large;
@@ -50,4 +51,22 @@ ul {
   margin: 1em auto;
   padding: 8px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vh;
+  }
+
+  .container {
+    width: 80%;
+    margin-bottom: 18px;
+    min-height: 400px;
+  }
+
+  .item {
+    margin: 0.5em;
+  }
 }
