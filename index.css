@@ -44,3 +44,10 @@ ul {
   margin-top: 1em;
   color: green;
 }
+
+.reset {
+  display: block;
+  margin: 1em auto;
+  padding: 8px;
+  font-weight: bold;
+}
